@@ -6,7 +6,8 @@
 
 // Code here
 
-
+let greeting = "Hi";
+let farewell = 'Goodbye';
 
 //////////////////PROBLEM 2////////////////////
 
@@ -16,6 +17,9 @@
 
 //Code here
 
+let hello = 'Hello';
+let userName = 'Nathaniel Shirts';
+let salutation = `${hello} ${userName}`
 
 
 //////////////////PROBLEM 3////////////////////
@@ -23,7 +27,7 @@
 //Create a variable called seven that has a number data type with the value of 7
 
 //Code here
-
+let seven = 7;
 
 
 //////////////////PROBLEM 4////////////////////
@@ -32,7 +36,7 @@
 // This datatype should be a number
 
 //Code here
-
+let money = 99999999999;
 
 
 //////////////////PROBLEM 5////////////////////
@@ -41,6 +45,7 @@
 
 //Code here
 
+let awesome = true;
 
 
 //////////////////PROBLEM 6////////////////////
@@ -51,7 +56,7 @@ let myCar = "Jeep";
 
 
 // Set the variable myCar to be null
-
+myCar = null;
 
 //Code here
 
@@ -64,7 +69,21 @@ let myCar = "Jeep";
 
 //Code here
 
-
+let users = [
+  {
+    name: '1',
+    age: 1
+},
+{
+  name: '2',
+  age: 2
+},{
+  name: '3',
+  age: 3
+},{
+  name: '4',
+  age: 4
+}]
 
 //////////////////PROBLEM 8////////////////////
 
@@ -74,7 +93,17 @@ let myCar = "Jeep";
 // Each hobbies property will have a corresponding value which will be an object
 
 //Code here
-
+let family = {
+  jane: {
+    hobbies: {}
+  },
+  bob: {
+    hobbies: {}
+  },
+  jack: {
+    hobbies: {}
+  }
+}
 
 
 //////////////////PROBLEM 9////////////////////
@@ -83,7 +112,7 @@ let myCar = "Jeep";
 // Each item should be an array with 2 items (numbers) in each array
 
 //Code here
-
+let gameScores = [[1,2],[3,4],[5,6]]
 
 
 //////////////////PROBLEM 10////////////////////
@@ -92,7 +121,19 @@ let myCar = "Jeep";
 // Each object should have 3 properties: name (string), gender (string), height (number) in each array
 
 //Code here
-
+let people = [{
+  name: 'person 1',
+  gender: 'male',
+  height: 60
+},{
+  name: 'person 2',
+  gender: 'female',
+  height: 61
+},{
+  name: 'person 3',
+  gender: 'male',
+  height: 62
+}]
 
 
 //////////////////PROBLEM 11////////////////////
@@ -102,7 +143,11 @@ let myCar = "Jeep";
 
 //Code here
 
-
+let cowboy = {
+  name: 'John',
+  state: 'Utah',
+  favoriteCountrySong: 'Old town road'
+}
 
 //////////////////PROBLEM 12////////////////////
 
@@ -128,7 +173,7 @@ function launch() {
 //   an array with 5 numbers
 //   the object spaceship (provided for you)
 //   the function launch (provided for you)
-
+let dataTypes = [42, 'meaning', true, [1,2,3,4,5], spaceship, launch]
 
 //Code here
 
@@ -139,7 +184,7 @@ function launch() {
 // Edit the function called "sum" so that when it is invoked, it returns the sum of its parameters num1 and num2
 
 function sum(num1, num2){
-  return // Code here
+  return num1 + num2;
 };
   
 
@@ -149,12 +194,13 @@ function sum(num1, num2){
 // Create two variables number1 and number2 and assign them number values
 
 // Code here
-
+let number1 = 1;
+let number2 = 2;
 
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
 
 function multiply() {
-  return // Code here
+  return number1 * number2;
 };
 
 
@@ -170,7 +216,7 @@ let food = 'pizza';
 // In your solution code, use template strings (not concatenation) and use the food variable provided
 
 function favFood(){
-  return // Code here
+  return `My favorite food is ${food}`;
 };
 
 
@@ -187,7 +233,7 @@ let theBoss;
 // the function assigns the value of theName to theBoss variable
 
 function assignName(name){
-  // Code here
+  theBoss = name;
 };
 
 
@@ -207,7 +253,7 @@ let user = {
 // edit the function getName so that it accesses the name property of the user object and returns its value
 
 function getName(userObj){
-  return // Code here
+  return user.name;
 };
 
 
@@ -229,7 +275,7 @@ let calendar = {
 // Make sure you are accessing it from the weekDays array of the calendar object
 
 function getWeekDay(calendar){
-  return // Code here
+  return calendar.weekDays[2];
 }
 
 
@@ -240,6 +286,9 @@ function getWeekDay(calendar){
 
 // Code here
 
+function fn(paramerter){
+  return paramerter;
+}
 
 
 //////////////////PROBLEM 20////////////////////
@@ -254,7 +303,9 @@ let lastName = "Jones";
 // The returned value should include a space between the first and last names and should use concatenation (not template strings)
 
 // Code here
-
+function createName() {
+  return firstName + ' ' + lastName;
+}
 
 
 //////////////////PROBLEM 21////////////////////
@@ -262,7 +313,9 @@ let lastName = "Jones";
 // Create a function called showMeSeven that returns the number 7
 
 // Code here
-
+function showMeSeven() {
+  return seven;
+}
 
 
 //////////////////PROBLEM 22////////////////////
@@ -271,7 +324,9 @@ let lastName = "Jones";
 
 // Code here
 
-
+function multiplier(num1, num2) {
+  return num1 * num2;
+}
 
 //////////////////PROBLEM 23////////////////////
 
@@ -281,7 +336,9 @@ let lastName = "Jones";
 
 // Code here
 
-
+function sayHello(greeting, name) {
+  return `${greeting} ${name}`;
+}
 
 //////////////////PROBLEM 24////////////////////
 
@@ -292,7 +349,9 @@ let lastName = "Jones";
 
 // Code here
 
-
+function makeExercise(exerciseName, duration) {
+  return {exerciseName, duration}
+}
 
 //////////////////PROBLEM 25////////////////////
 
@@ -306,7 +365,7 @@ let age = "TBD";
 // The variable age will be changed during testing
 
 function isOldEnough(){
-  // Code here
+  return (age > 21)? 'old enough': 'not yet'
 };
 
 
@@ -323,7 +382,9 @@ let workEthic = "TBD";
 // The variable workEthic will be changed during testing
 
 function successPredictor(){
-  // Code here
+  if (workEthic == 'great') {
+    return 'success at DevMountain'
+  } else return 'failure at DevMountain';
 };
 
 
@@ -340,7 +401,9 @@ let cookieType = "TBD";
 // The variable cookieType will be changed during testing
 
 function eatOrTrash(){
-  // Code here
+  if (cookieType == 'raisin') {
+    return 'throw in trash'
+  } else return 'eat';
 };
 
 
@@ -358,7 +421,9 @@ let yourTeamScore = "TBD";
 // The myTeamScore and yourTeamScore variables will be changed during testing
 
 function finalScore(){
-  // Code here
+  if (myTeamScore > yourTeamScore) {
+    return 'we are the champions';
+  } else return ':(';
 };
 
 
@@ -379,7 +444,11 @@ age = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function findCorrectTransportation(){
-  // Code here
+  if (3 <= age && age <= 7){
+    return 'tricycle'
+  } else if (8 <= age && age <= 15) {
+    return 'bicycle'
+  } else return 'car'
 };
 
 
@@ -400,7 +469,9 @@ let temp = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function doIGetIceCream(){
-  // Code here
+  if (cash == true && temp == 'hot') {
+    return 'Get Ice Cream!'
+  } else return 'Save up for another day.';
 };
 
 
@@ -420,7 +491,9 @@ let work = "TBD";
 // The chores and work variables will always be true or false and will be changed during testing
 
 function doIHaveFreeTime(){
-  // Code here
+  if (!chores || !work) {
+    return 'free time!'
+  }
 };
 
 
@@ -442,7 +515,9 @@ let brakes = "TBD";
 // The brakes variables will always be a boolean and will be changed during testing
 
 function setCrash(){
-  // Code here
+  if (currentSpeed == 'fast' && !brakes) {
+    crash = true;
+  }
 };
 
 
@@ -465,7 +540,11 @@ user = {
 // The arguments passed into makePurchase will always be numbers and will be changed during testing
 
 // Code here
-
+function makePurchase(priceOfItem) {
+  if (priceOfItem <= user.total) {
+    user.total -= priceOfItem;
+  } else return 'not enough funds'
+}
 
 
 //////////////////PROBLEM 34////////////////////
@@ -496,3 +575,11 @@ function sleep(){
 // The arguments passed into decisionMaker will always be true or false and will be changed during testing
 
 // Code here
+function decisionMaker(hungry, tired) {
+  if (hungry && !tired) {
+    return eat();
+  } else if (!hungry && tired) {
+    return sleep();
+  } else return 'undecided';
+  
+}
